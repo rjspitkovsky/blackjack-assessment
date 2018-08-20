@@ -1,9 +1,17 @@
 import React from 'react';
 
 class Card extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      status: "face-down"
+    }
+  }
+
+
   render(){
     return(
-      <h1>Testing!</h1>
+      <h1>{this.state.status}</h1>
     )
   }
 }
